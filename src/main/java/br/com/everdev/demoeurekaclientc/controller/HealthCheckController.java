@@ -70,11 +70,11 @@ public class HealthCheckController {
     
    /*logica soma numero aleatorio*/
     @GetMapping("/geraNumeroAleatorioC")
-    public int geruNumeroEmC() throws URISyntaxException {    	
+    public String geruNumeroEmC() throws URISyntaxException {    	
     	Random random = new Random();
     	int aleatorioC = random.nextInt(10);
     	
     	
-        return aleatorioC;
+        return String.valueOf(aleatorioC);
     }
 }
